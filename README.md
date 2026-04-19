@@ -38,13 +38,13 @@ A [Filament](https://filamentphp.com) plugin that integrates [Univer Sheet](http
 - Data persisted as JSON — compatible with Eloquent's `json` cast
 - Configurable toolbar, formula bar, and sheet tab visibility
 - English and Japanese translations included
-- Supports Filament 3.x / 4.x / 5.x
+- Supports Filament 5.x
 
 ## Requirements
 
 - PHP 8.3+
 - Laravel 11+
-- Filament 3.x / 4.x / 5.x
+- Filament 5.x
 
 ## Installation
 
