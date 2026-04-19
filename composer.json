@@ -1,8 +1,8 @@
 {
-    "name": "because/filament-univer-sheet",
+    "name": "qalainau/filament-univer-sheet",
     "description": "Univer Sheet spreadsheet components for Filament",
     "keywords": ["filament", "laravel", "spreadsheet", "univer", "excel"],
-    "homepage": "https://github.com/because/filament-univer-sheet",
+    "homepage": "https://github.com/qalainau/filament-univer-sheet",
     "license": "MIT",
     "type": "library",
     "authors": [

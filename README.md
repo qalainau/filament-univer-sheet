@@ -1,8 +1,8 @@
 # Filament Univer Sheet
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/because/filament-univer-sheet.svg?style=flat-square)](https://packagist.org/packages/because/filament-univer-sheet)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/because/filament-univer-sheet/ci.yml?branch=main&label=tests&style=flat-square)](https://github.com/because/filament-univer-sheet/actions?query=workflow%3ACI+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/because/filament-univer-sheet.svg?style=flat-square)](https://packagist.org/packages/because/filament-univer-sheet)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/qalainau/filament-univer-sheet.svg?style=flat-square)](https://packagist.org/packages/qalainau/filament-univer-sheet)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/qalainau/filament-univer-sheet/ci.yml?branch=main&label=tests&style=flat-square)](https://github.com/qalainau/filament-univer-sheet/actions?query=workflow%3ACI+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/qalainau/filament-univer-sheet.svg?style=flat-square)](https://packagist.org/packages/qalainau/filament-univer-sheet)
 
 A [Filament](https://filamentphp.com) plugin that integrates [Univer Sheet](https://github.com/dream-num/univer) — a powerful, modern spreadsheet engine — as form fields, infolist entries, and table columns.
 
@@ -51,7 +51,7 @@ A [Filament](https://filamentphp.com) plugin that integrates [Univer Sheet](http
 Install the package via Composer:
 
 ```bash
-composer require because/filament-univer-sheet
+composer require qalainau/filament-univer-sheet
 ```
 
 Publish the Filament assets:

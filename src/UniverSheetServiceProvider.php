@@ -31,6 +31,6 @@ class UniverSheetServiceProvider extends PackageServiceProvider
                 'univer-sheet-styles',
                 __DIR__.'/../resources/css/univer-sheet.css',
             ),
-        ], package: 'because/filament-univer-sheet');
+        ], package: 'qalainau/filament-univer-sheet');
     }
 }
