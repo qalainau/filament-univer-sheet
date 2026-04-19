@@ -2,7 +2,6 @@
 
 namespace Qalainau\UniverSheet\Tests;
 
-use Qalainau\UniverSheet\UniverSheetServiceProvider;
 use Filament\FilamentServiceProvider;
 use Filament\Forms\FormsServiceProvider;
 use Filament\Infolists\InfolistsServiceProvider;
@@ -10,6 +9,7 @@ use Filament\Support\SupportServiceProvider;
 use Filament\Tables\TablesServiceProvider;
 use Livewire\LivewireServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
+use Qalainau\UniverSheet\UniverSheetServiceProvider;
 
 class TestCase extends Orchestra
 {

@@ -1,3 +1,5 @@
 <?php
 
-// Test configuration is in the root tests/Pest.php
+use Qalainau\UniverSheet\Tests\TestCase;
+
+uses(TestCase::class)->in(__DIR__);
