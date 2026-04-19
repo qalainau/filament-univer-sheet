@@ -43,6 +43,11 @@
         "test": "vendor/bin/pest",
         "format": "vendor/bin/pint"
     },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
     "minimum-stability": "dev",
     "prefer-stable": true
 }
