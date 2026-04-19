@@ -1,6 +1,6 @@
 <?php
 
-use Because\UniverSheet\SpreadsheetEntry;
+use Qalainau\UniverSheet\SpreadsheetEntry;
 
 it('can be instantiated', function () {
     $entry = SpreadsheetEntry::make('spreadsheet');

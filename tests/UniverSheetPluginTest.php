@@ -1,6 +1,6 @@
 <?php
 
-use Because\UniverSheet\UniverSheetPlugin;
+use Qalainau\UniverSheet\UniverSheetPlugin;
 
 it('has correct plugin id', function () {
     $plugin = UniverSheetPlugin::make();

@@ -1,6 +1,6 @@
 <?php
 
-namespace Because\UniverSheet;
+namespace Qalainau\UniverSheet;
 
 use Filament\Support\Assets\Css;
 use Filament\Support\Assets\Js;

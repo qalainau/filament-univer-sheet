@@ -1,6 +1,6 @@
 <?php
 
-use Because\UniverSheet\SpreadsheetField;
+use Qalainau\UniverSheet\SpreadsheetField;
 
 it('can be instantiated', function () {
     $field = SpreadsheetField::make('spreadsheet');

@@ -1,6 +1,6 @@
 <?php
 
-namespace Because\UniverSheet;
+namespace Qalainau\UniverSheet;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;

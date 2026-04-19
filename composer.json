@@ -24,18 +24,18 @@
     },
     "autoload": {
         "psr-4": {
-            "Because\\UniverSheet\\": "src/"
+            "Qalainau\\UniverSheet\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Because\\UniverSheet\\Tests\\": "tests/"
+            "Qalainau\\UniverSheet\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Because\\UniverSheet\\UniverSheetServiceProvider"
+                "Qalainau\\UniverSheet\\UniverSheetServiceProvider"
             ]
         }
     },

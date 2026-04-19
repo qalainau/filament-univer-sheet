@@ -1,8 +1,8 @@
 <?php
 
-namespace Because\UniverSheet\Tests;
+namespace Qalainau\UniverSheet\Tests;
 
-use Because\UniverSheet\UniverSheetServiceProvider;
+use Qalainau\UniverSheet\UniverSheetServiceProvider;
 use Filament\FilamentServiceProvider;
 use Filament\Forms\FormsServiceProvider;
 use Filament\Infolists\InfolistsServiceProvider;

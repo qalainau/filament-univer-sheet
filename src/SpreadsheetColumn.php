@@ -1,6 +1,6 @@
 <?php
 
-namespace Because\UniverSheet;
+namespace Qalainau\UniverSheet;
 
 use Closure;
 use Filament\Tables\Columns\Column;

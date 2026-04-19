@@ -63,7 +63,7 @@ php artisan filament:assets
 Register the plugin in your panel provider:
 
 ```php
-use Because\UniverSheet\UniverSheetPlugin;
+use Qalainau\UniverSheet\UniverSheetPlugin;
 
 public function panel(Panel $panel): Panel
 {
@@ -87,7 +87,7 @@ php artisan vendor:publish --tag=filament-univer-sheet-config
 Use `SpreadsheetField` to add a full spreadsheet editor to your forms:
 
 ```php
-use Because\UniverSheet\SpreadsheetField;
+use Qalainau\UniverSheet\SpreadsheetField;
 
 public static function form(Schema $schema): Schema
 {
@@ -116,7 +116,7 @@ SpreadsheetField::make('data')
 Use `SpreadsheetEntry` to display spreadsheet data in a read-only view. Editing and selection are automatically disabled:
 
 ```php
-use Because\UniverSheet\SpreadsheetEntry;
+use Qalainau\UniverSheet\SpreadsheetEntry;
 
 public static function infolist(Schema $schema): Schema
 {
@@ -137,7 +137,7 @@ public static function infolist(Schema $schema): Schema
 Use `SpreadsheetColumn` to show a compact spreadsheet preview in your table:
 
 ```php
-use Because\UniverSheet\SpreadsheetColumn;
+use Qalainau\UniverSheet\SpreadsheetColumn;
 
 public static function table(Table $table): Table
 {

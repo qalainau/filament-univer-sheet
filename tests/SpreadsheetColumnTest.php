@@ -1,6 +1,6 @@
 <?php
 
-use Because\UniverSheet\SpreadsheetColumn;
+use Qalainau\UniverSheet\SpreadsheetColumn;
 
 it('can be instantiated', function () {
     $column = SpreadsheetColumn::make('spreadsheet');
