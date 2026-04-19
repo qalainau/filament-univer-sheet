@@ -1,0 +1,19 @@
+Filament Univer Sheet
+Copyright (c) Because
+
+This product includes software developed by the Univer project
+(https://github.com/dream-num/univer).
+
+Univer is licensed under the Apache License, Version 2.0.
+You may obtain a copy of the License at:
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+The following third-party dependencies are bundled in the built JS asset:
+
+- @univerjs/presets (Apache-2.0) - https://github.com/dream-num/univer
+- @univerjs/preset-sheets-core (Apache-2.0) - https://github.com/dream-num/univer
+- @univerjs/core (Apache-2.0) - https://github.com/dream-num/univer
+- React (MIT) - https://github.com/facebook/react
+- ReactDOM (MIT) - https://github.com/facebook/react
+- RxJS (Apache-2.0) - https://github.com/ReactiveX/rxjs

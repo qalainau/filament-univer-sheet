@@ -1,0 +1,48 @@
+{
+    "name": "because/filament-univer-sheet",
+    "description": "Univer Sheet spreadsheet components for Filament",
+    "keywords": ["filament", "laravel", "spreadsheet", "univer", "excel"],
+    "homepage": "https://github.com/because/filament-univer-sheet",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Because",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "filament/filament": "^3.0 || ^4.0 || ^5.0",
+        "spatie/laravel-package-tools": "^1.15 || ^2.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^10.0",
+        "pestphp/pest": "^4.0",
+        "pestphp/pest-plugin-laravel": "^4.0",
+        "laravel/pint": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Because\\UniverSheet\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Because\\UniverSheet\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Because\\UniverSheet\\UniverSheetServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "format": "vendor/bin/pint"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

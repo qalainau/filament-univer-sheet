@@ -1,0 +1,5 @@
+/* Additional styles for Univer Sheet Filament integration */
+.fi-univer-sheet-container {
+    position: relative;
+    overflow: hidden;
+}
