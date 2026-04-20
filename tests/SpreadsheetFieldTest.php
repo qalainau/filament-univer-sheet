@@ -60,3 +60,42 @@ it('can toggle sheet tabs', function () {
 
     expect($field->getShowSheetTabs())->toBeFalse();
 });
+
+it('shows header by default', function () {
+    $field = SpreadsheetField::make('spreadsheet');
+
+    expect($field->getShowHeaderBar())->toBeTrue();
+});
+
+it('can hide header', function () {
+    $field = SpreadsheetField::make('spreadsheet')
+        ->showHeaderBar(false);
+
+    expect($field->getShowHeaderBar())->toBeFalse();
+});
+
+it('shows context menu by default', function () {
+    $field = SpreadsheetField::make('spreadsheet');
+
+    expect($field->getShowContextMenu())->toBeTrue();
+});
+
+it('can hide context menu', function () {
+    $field = SpreadsheetField::make('spreadsheet')
+        ->showContextMenu(false);
+
+    expect($field->getShowContextMenu())->toBeFalse();
+});
+
+it('has no ribbon type by default', function () {
+    $field = SpreadsheetField::make('spreadsheet');
+
+    expect($field->getRibbonType())->toBeNull();
+});
+
+it('can set ribbon type', function () {
+    $field = SpreadsheetField::make('spreadsheet')
+        ->ribbonType('collapsed');
+
+    expect($field->getRibbonType())->toBe('collapsed');
+});

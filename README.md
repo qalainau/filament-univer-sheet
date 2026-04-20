@@ -36,7 +36,8 @@ A [Filament](https://filamentphp.com) plugin that integrates [Univer Sheet](http
 - Read-only spreadsheet display in infolists (editing disabled, selection disabled)
 - Compact spreadsheet preview in table columns with row numbers
 - Data persisted as JSON — compatible with Eloquent's `json` cast
-- Configurable toolbar, formula bar, and sheet tab visibility
+- Configurable toolbar, formula bar, header bar, sheet tab, and context menu visibility
+- Ribbon type selection (collapsed, simple, classic)
 - English and Japanese translations included
 - Supports Filament 5.x
 
@@ -108,6 +109,9 @@ SpreadsheetField::make('data')
     ->showToolbar(false)
     ->showFormulaBar(false)
     ->showSheetTabs(false)
+    ->showHeaderBar(false)
+    ->showContextMenu(false)
+    ->ribbonType('collapsed') // 'collapsed', 'simple', or 'classic'
     ->columnSpanFull(),
 ```
 
@@ -192,6 +196,9 @@ UniverSheetPlugin::make()
     ->showToolbar(false)
     ->showFormulaBar(false)
     ->showSheetTabs(false)
+    ->showHeaderBar(false)
+    ->showContextMenu(false)
+    ->ribbonType('collapsed')
     ->locale('ja-JP'),
 ```
 
@@ -204,6 +211,9 @@ return [
     'show_toolbar' => true,
     'show_formula_bar' => true,
     'show_sheet_tabs' => true,
+    'show_header_bar' => true,
+    'show_context_menu' => true,
+    'ribbon_type' => null, // 'collapsed', 'simple', or 'classic'
     'locale' => 'en-US',
 ];
 ```
@@ -219,6 +229,9 @@ return [
 | `showToolbar(bool\|Closure)` | `true` | Show/hide the toolbar |
 | `showFormulaBar(bool\|Closure)` | `true` | Show/hide the formula bar |
 | `showSheetTabs(bool\|Closure)` | `true` | Show/hide sheet tabs at the bottom |
+| `showHeaderBar(bool\|Closure)` | `true` | Show/hide the header bar (ribbon tabs, toolbar, formula bar area) |
+| `showContextMenu(bool\|Closure)` | `true` | Show/hide the right-click context menu |
+| `ribbonType(string\|Closure\|null)` | `null` | Ribbon display style: `'collapsed'`, `'simple'`, or `'classic'` |
 
 ### SpreadsheetEntry
 
@@ -228,6 +241,9 @@ return [
 | `showToolbar(bool\|Closure)` | `false` | Show/hide the toolbar |
 | `showFormulaBar(bool\|Closure)` | `false` | Show/hide the formula bar |
 | `showSheetTabs(bool\|Closure)` | `true` | Show/hide sheet tabs |
+| `showHeaderBar(bool\|Closure)` | `false` | Show/hide the header bar |
+| `showContextMenu(bool\|Closure)` | `false` | Show/hide the right-click context menu |
+| `ribbonType(string\|Closure\|null)` | `null` | Ribbon display style |
 
 ### SpreadsheetColumn
 

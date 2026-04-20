@@ -32,6 +32,12 @@
                     this.instance = window.__univerSheet.create(container, {
                         data: data && typeof data === 'object' ? data : undefined,
                         locale: @js($getLocale()),
+                        toolbar: @js($getShowToolbar()),
+                        formulaBar: @js($getShowFormulaBar()),
+                        footer: @js($getShowSheetTabs()),
+                        header: @js($getShowHeaderBar()),
+                        contextMenu: @js($getShowContextMenu()),
+                        ribbonType: @js($getRibbonType()),
                         onChange: (snapshot) => {
                             if (this._debounce) clearTimeout(this._debounce);
                             this._debounce = setTimeout(() => {

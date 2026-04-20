@@ -13,6 +13,12 @@ class UniverSheetPlugin implements Plugin
 
     protected bool $showSheetTabs = true;
 
+    protected bool $showHeaderBar = true;
+
+    protected bool $showContextMenu = true;
+
+    protected ?string $ribbonType = null;
+
     protected string $locale = 'en-US';
 
     public function getId(): string
@@ -64,6 +70,27 @@ class UniverSheetPlugin implements Plugin
         return $this;
     }
 
+    public function showHeaderBar(bool $show = true): static
+    {
+        $this->showHeaderBar = $show;
+
+        return $this;
+    }
+
+    public function showContextMenu(bool $show = true): static
+    {
+        $this->showContextMenu = $show;
+
+        return $this;
+    }
+
+    public function ribbonType(?string $type): static
+    {
+        $this->ribbonType = $type;
+
+        return $this;
+    }
+
     public function locale(string $locale): static
     {
         $this->locale = $locale;
@@ -84,6 +111,21 @@ class UniverSheetPlugin implements Plugin
     public function getShowSheetTabs(): bool
     {
         return $this->showSheetTabs;
+    }
+
+    public function getShowHeaderBar(): bool
+    {
+        return $this->showHeaderBar;
+    }
+
+    public function getShowContextMenu(): bool
+    {
+        return $this->showContextMenu;
+    }
+
+    public function getRibbonType(): ?string
+    {
+        return $this->ribbonType;
     }
 
     public function getLocale(): string

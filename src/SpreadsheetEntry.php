@@ -17,6 +17,12 @@ class SpreadsheetEntry extends Entry
 
     protected bool|Closure $showSheetTabs = true;
 
+    protected bool|Closure $showHeaderBar = false;
+
+    protected bool|Closure $showContextMenu = false;
+
+    protected string|Closure|null $ribbonType = null;
+
     protected string|Closure|null $locale = null;
 
     public function height(string|Closure $height): static
@@ -65,6 +71,42 @@ class SpreadsheetEntry extends Entry
     public function getShowSheetTabs(): bool
     {
         return $this->evaluate($this->showSheetTabs);
+    }
+
+    public function showHeaderBar(bool|Closure $show = true): static
+    {
+        $this->showHeaderBar = $show;
+
+        return $this;
+    }
+
+    public function getShowHeaderBar(): bool
+    {
+        return $this->evaluate($this->showHeaderBar);
+    }
+
+    public function showContextMenu(bool|Closure $show = true): static
+    {
+        $this->showContextMenu = $show;
+
+        return $this;
+    }
+
+    public function getShowContextMenu(): bool
+    {
+        return $this->evaluate($this->showContextMenu);
+    }
+
+    public function ribbonType(string|Closure|null $type): static
+    {
+        $this->ribbonType = $type;
+
+        return $this;
+    }
+
+    public function getRibbonType(): ?string
+    {
+        return $this->evaluate($this->ribbonType);
     }
 
     public function locale(string|Closure $locale): static

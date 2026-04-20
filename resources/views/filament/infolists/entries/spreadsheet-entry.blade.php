@@ -27,6 +27,9 @@
                     toolbar: @js($getShowToolbar()),
                     formulaBar: @js($getShowFormulaBar()),
                     footer: @js($getShowSheetTabs()),
+                    header: @js($getShowHeaderBar()),
+                    contextMenu: @js($getShowContextMenu()),
+                    ribbonType: @js($getRibbonType()),
                 });
             },
             destroy() {

@@ -77,6 +77,12 @@ window.__univerSheet = {
                 if (options.footer === false) {
                     presetOptions.footer = false;
                 }
+                if (options.contextMenu === false) {
+                    presetOptions.contextMenu = false;
+                }
+                if (options.ribbonType) {
+                    presetOptions.ribbonType = options.ribbonType;
+                }
 
                 const localeKey = options.locale || 'en-US';
                 const localeEntry = LOCALE_MAP[localeKey] || LOCALE_MAP['en-US'];
