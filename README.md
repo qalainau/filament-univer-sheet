@@ -3,6 +3,7 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/qalainau/filament-univer-sheet.svg?style=flat-square)](https://packagist.org/packages/qalainau/filament-univer-sheet)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/qalainau/filament-univer-sheet/ci.yml?branch=main&label=tests&style=flat-square)](https://github.com/qalainau/filament-univer-sheet/actions?query=workflow%3ACI+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/qalainau/filament-univer-sheet.svg?style=flat-square)](https://packagist.org/packages/qalainau/filament-univer-sheet)
+[![Newsletter](https://img.shields.io/badge/newsletter-subscribe-0ea5a3.svg?style=flat-square)](https://webllsystem.com/filament/?ref=filament-univer-sheet)
 
 A [Filament](https://filamentphp.com) plugin that integrates [Univer Sheet](https://github.com/dream-num/univer) — a powerful, modern spreadsheet engine — as form fields, infolist entries, and table columns.
 
@@ -28,6 +29,7 @@ A [Filament](https://filamentphp.com) plugin that integrates [Univer Sheet](http
 - [Development](#development)
 - [Testing](#testing)
 - [Changelog](#changelog)
+- [Stay Updated](#stay-updated)
 - [License](#license)
 
 ## Features
@@ -295,6 +297,12 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 - [Univer](https://github.com/dream-num/univer) — The spreadsheet engine
 - [Filament](https://filamentphp.com) — The admin panel framework
+
+## Stay Updated
+
+Get release notes, upgrade guides for new Filament versions, and early access to new plugins — a few emails a year, no spam.
+
+**[Subscribe to the newsletter →](https://webllsystem.com/filament/?ref=filament-univer-sheet)**
 
 ## License
 
