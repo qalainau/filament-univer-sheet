@@ -102,9 +102,9 @@ window.__univerSheet = {
                 univerAPI = result.univerAPI;
 
                 if (options.data && typeof options.data === 'object') {
-                    univerAPI.createUniverSheet(options.data);
+                    univerAPI.createWorkbook(options.data);
                 } else {
-                    univerAPI.createUniverSheet({ name: 'Sheet1' });
+                    univerAPI.createWorkbook({ name: 'Sheet1' });
                 }
 
                 if (options.readOnly) {
@@ -113,14 +113,17 @@ window.__univerSheet = {
                         workbook.setEditable(false);
                         workbook.disableSelection();
                     }
-                    const perm = univerAPI.getPermission();
-                    if (perm) {
-                        perm.setWorkbookEditPermission(false);
-                    }
+                    univerAPI.addEvent(univerAPI.Event.LifeCycleChanged, ({ stage }) => {
+                        if (stage !== univerAPI.Enum.LifecycleStages.Steady) return;
+                        const activeWorkbook = univerAPI.getActiveWorkbook();
+                        if (activeWorkbook) {
+                            activeWorkbook.getWorkbookPermission().setReadOnly();
+                        }
+                    });
                 }
 
                 if (options.onChange) {
-                    univerAPI.onCommandExecuted(() => {
+                    univerAPI.addEvent(univerAPI.Event.CommandExecuted, () => {
                         if (debounceTimer) {
                             clearTimeout(debounceTimer);
                         }
@@ -128,7 +131,7 @@ window.__univerSheet = {
                             if (!univerAPI) return;
                             const workbook = univerAPI.getActiveWorkbook();
                             if (!workbook) return;
-                            const snapshot = workbook.getSnapshot();
+                            const snapshot = workbook.save();
                             options.onChange(JSON.parse(JSON.stringify(snapshot)));
                         }, 500);
                     });
