@@ -26,7 +26,7 @@ class UniverSheetServiceProvider extends PackageServiceProvider
             Js::make(
                 'univer-sheet',
                 __DIR__.'/../resources/js/dist/univer-sheet.js',
-            ),
+            )->loadedOnRequest(),
             Css::make(
                 'univer-sheet-styles',
                 __DIR__.'/../resources/css/univer-sheet.css',

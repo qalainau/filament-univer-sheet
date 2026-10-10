@@ -11,6 +11,12 @@
             instance: null,
             _debounce: null,
             init() {
+                if (!window.__univerSheet && !document.querySelector('script[data-univer-sheet-script]')) {
+                    const script = document.createElement('script');
+                    script.src = @js(\Filament\Support\Facades\FilamentAsset::getScriptSrc('univer-sheet', 'qalainau/filament-univer-sheet'));
+                    script.dataset.univerSheetScript = '';
+                    document.head.appendChild(script);
+                }
                 this.$nextTick(() => this.waitAndMount());
             },
             waitAndMount() {
