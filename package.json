@@ -13,6 +13,6 @@
         "rxjs": "^7.0"
     },
     "devDependencies": {
-        "esbuild": "^0.25"
+        "esbuild": "^0.28"
     }
 }
