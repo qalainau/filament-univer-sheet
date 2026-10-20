@@ -298,6 +298,10 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 - [Univer](https://github.com/dream-num/univer) — The spreadsheet engine
 - [Filament](https://filamentphp.com) — The admin panel framework
 
+## More Filament Plugins
+
+Need Filament screens that stay fast with real amounts of data? Check out **[WarpUI](https://warpui.com/)** — premium Filament v5 plugins with canvas-based rendering for large datasets.
+
 ## Stay Updated
 
 Get release notes, upgrade guides for new Filament versions, and early access to new plugins — a few emails a year, no spam.
